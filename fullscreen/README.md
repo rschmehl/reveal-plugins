@@ -2,11 +2,11 @@
 
 This is a small Reveal.js plugin to display regular images in fullscreen mode, using the entire available window area, with options `contain` or `cover` mimicking the display behavior of background images.
 
-In Reveal.js, the scaling of [background images](https://revealjs.com/backgrounds/) is controlled by the [data-background-size](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size) attribute. The value `contain` uniformly scales the image to the available window area without cropping the image, leaving empty space if the aspect ratios of the image and the available window area are different, while the value `cover` scales the image to the available area, cropping it either vertically or horizontally, if necessary, so that no empty space remains. However, Reveal.js accommodates only one background image per slide. In some cases it can be useful to consecutively display several images of same size in fullscreen mode within one slide, using the [fragment feature](https://revealjs.com/fragments/) of Reveal.js. For example, to add precisely positioned graphical elements on top of a background photo, or to add a fullscreen slide show within one slide.
+In Reveal.js, the scaling of [background images](https://revealjs.com/backgrounds/) is controlled by the [data-background-size](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size) attribute. The value `contain` uniformly scales the image to the available window area without cropping the image, leaving empty space if the aspect ratios of the image and the available window area are different, while the value `cover` scales the image to the available area, cropping it either vertically or horizontally, if necessary, so that no empty space remains. However, only one background image can be used per slide. In some cases, it can be useful to consecutively display several images of same size in fullscreen mode within one slide, using the [fragment feature](https://revealjs.com/fragments/) of Reveal.js. For example, to add precisely positioned graphical elements on top of a background photo, or to add a fullscreen slide show within one slide.
 
 ## Installation
 
-Copy the file `plugin.js` into the plugin folder of your reveal.js presentation, i.e. `plugin/fullscreen` and load the plugin as shown below.
+Copy the file `plugin.js` into a subfolder of the plugin folder of your Reveal.js installation, i.e. `plugin/fullscreen` and load the plugin as shown below.
 
 ```html
 <link rel="stylesheet" href="plugin/fullscreen/plugin.js">
@@ -21,7 +21,7 @@ Copy the file `plugin.js` into the plugin folder of your reveal.js presentation,
 </script>
 ```
 
-After installing the plugin, you need to add the following CSS code to your local css file.
+After installing the plugin, you need to add the following CSS code to your local css file (typically in folders `dist` or `dist/theme`).
 
 ```css
 /* Fullscreen images in cover of contain mode */
@@ -35,20 +35,15 @@ After installing the plugin, you need to add the following CSS code to your loca
 }
 ```
 
-Note that you do not need to explicitly have to include a class `.cover` in your local css file.
+## Usage
 
-Example for using cover
+Add the image in the content section of the slide with the `fullscreen` class. To mimic `cover` mode add also the `cover` class, otherwise the image will be displayed in `contain` mode.
 
-## Use
-
-
-This plugin allows adding fullscreen images with display options `contain` or `cover`, within the content section of a slide.
-
-Simply add the images with the `.fullscreen` class and additionally mark images that should mimic `cover` mode with the `.cover` class.
-
-```md
-# Title {data-background-image="dir/background-image.jpg" data-background-size="cover"}
-![](dir/image-overlay.svg){.fragment .fullscreen .cover}
+```html
+<section data-background-image="https://unsplash.com/photos/AnwzytSWrv8" data-background-size="cover">
+  <img class="fragment fullscreen cover" src="https://unsplash.com/photos/KUCx92pIGCM">
+  <img class="fragment fullscreen cover" src="https://unsplash.com/photos/Au8KMj4JBDo">
+</section>
 ```
 
 ## License
