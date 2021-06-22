@@ -40,9 +40,9 @@ After installing the plugin, you need to add the following CSS code to your loca
 Add the image in the content section of the slide with the `fullscreen` class. To mimic `cover` mode add also the `cover` class, otherwise the image will be displayed in `contain` mode.
 
 ```html
-<section data-background-image="https://unsplash.com/photos/AnwzytSWrv8" data-background-size="cover">
-  <img class="fragment fullscreen cover" src="https://unsplash.com/photos/KUCx92pIGCM">
-  <img class="fragment fullscreen cover" src="https://unsplash.com/photos/Au8KMj4JBDo">
+<section data-background-image="https://wallpapercave.com/wp/hd9yFNT.jpg" data-background-size="cover">
+  <img class="fragment fullscreen cover" src="https://wallpapercave.com/wp/wp3162046.jpg">
+  <img class="fragment fullscreen cover" src="https://wallpapercave.com/wp/wp3987071.jpg">
 </section>
 ```
 
