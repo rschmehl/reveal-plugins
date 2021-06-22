@@ -1,8 +1,4 @@
-# Fullscreen Plugin
+# Reveal.js plugins
 
-This is a small plugin that
+Plugins for use with Reveal.js.
 
-
-## License
-
-Copyright (C) 2021, Roland Schmehl
