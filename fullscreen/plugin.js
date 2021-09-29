@@ -24,7 +24,7 @@ window.RevealFullscreen = window.RevealFullscreen || {
 const initFullscreen = function(Reveal){
 
   var ready = false;
-	var resize = false;
+  var resize = false;
   var scale = 0;
 
   window.addEventListener( 'ready', function( event ) {
