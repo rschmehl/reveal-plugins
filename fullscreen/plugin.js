@@ -10,7 +10,7 @@
 **
 ** Version: 1.0
 **
-** License: MIT license (see LICENSE.md)
+** License: MIT license (see file LICENSE)
 **
 ******************************************************************/
 
