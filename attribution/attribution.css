@@ -9,7 +9,7 @@
   pointer-events: none;
   text-align: center;
   writing-mode: vertical-lr;
-  transform: translate( -50%, -50% ) scale( 100% ) rotate(-180deg);
+  transform: translate( -50%, -50% ) scale( 1 ) rotate( 180deg );
 }
 
 /* Attribution plugin: activate pointer events for attribution text only */

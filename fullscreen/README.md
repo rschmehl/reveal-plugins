@@ -9,7 +9,7 @@ In Reveal.js, the scaling of [background images](https://revealjs.com/background
 Copy the file `plugin.js` into a subfolder of the plugin folder of your Reveal.js installation, i.e. `plugin/fullscreen` and load the plugin as shown below.
 
 ```html
-<link rel="stylesheet" href="plugin/fullscreen/plugin.js">
+<link rel="stylesheet" href="dist/fullscreen.css">
 <script src="plugin/fullscreen/plugin.js"></script>
 
 <script>

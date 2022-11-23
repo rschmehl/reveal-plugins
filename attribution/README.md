@@ -9,7 +9,7 @@ The attribution text can be styled via CSS, can include links, etc.
 Copy the file `plugin.js` into a subfolder of the plugin folder of your Reveal.js installation, i.e. `plugin/attribution` and load the plugin as shown below.
 
 ```html
-<link rel="stylesheet" href="plugin/attribution/plugin.js">
+<link rel="stylesheet" href="dist/attribution.css">
 <script src="plugin/attribution/plugin.js"></script>
 
 <script>
