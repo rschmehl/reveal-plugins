@@ -6,7 +6,7 @@ The attribution text can be styled via CSS, can include links, etc.
 
 ## Installation
 
-Copy the file `plugin.js` into a subfolder of the plugin folder of your Reveal.js installation, i.e. `plugin/attribution` and load the plugin as shown below.
+Copy the file `plugin.js` into a subfolder of the plugin folder of your Reveal.js installation, i.e. `plugin/fullscreen`, and copy the file `attribution.css` into the `dist` subfolder of your Reveal.js installation. Load the plugin as shown below.
 
 ```html
 <link rel="stylesheet" href="dist/attribution.css">
@@ -21,28 +21,7 @@ Copy the file `plugin.js` into a subfolder of the plugin folder of your Reveal.j
 </script>
 ```
 
-After installing the plugin, you need to add the following CSS code to your local css file (typically in folders `dist` or `dist/theme`).
-
-```css
-/* Attribution plugin: text along the right edge of the viewport */
-.attribution{
-  position: absolute;
-  top: 50%;
-  bottom: auto;
-  left: 50%;
-  right: auto;
-  font-size: 0.4em;
-  pointer-events: none;
-  text-align: center;
-  writing-mode: vertical-lr;
-  transform: translate( -50%, -50% ) scale( 100% ) rotate(-180deg);
-}
-
-/* Attribution plugin: activate pointer events for attribution text only */
-.attribution .content{
-  pointer-events: auto;
-}
-```
+Alternatively to loading the CSS styles as a separate file, you can add the content of file `attribution.css` directly to your local cases file (typically in folders `dist` or `dist/theme`).
 
 Note that the plugin automatically wraps `<span class="content">` and `</span>` around the attribution text, which is necessary for reactivating pointer events on the attribution text.
 

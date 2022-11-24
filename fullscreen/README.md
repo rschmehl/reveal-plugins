@@ -6,7 +6,7 @@ In Reveal.js, the scaling of [background images](https://revealjs.com/background
 
 ## Installation
 
-Copy the file `plugin.js` into a subfolder of the plugin folder of your Reveal.js installation, i.e. `plugin/fullscreen` and load the plugin as shown below.
+Copy the file `plugin.js` into a subfolder of the plugin folder of your Reveal.js installation, i.e. `plugin/fullscreen`, and copy the file `fullscreen.css` into the `dist` subfolder of your Reveal.js installation. Load the plugin as shown below.
 
 ```html
 <link rel="stylesheet" href="dist/fullscreen.css">
@@ -21,19 +21,7 @@ Copy the file `plugin.js` into a subfolder of the plugin folder of your Reveal.j
 </script>
 ```
 
-After installing the plugin, you need to add the following CSS code to your local css file (typically in folders `dist` or `dist/theme`).
-
-```css
-/* Fullscreen images in cover of contain mode */
-.reveal img.fullscreen {
-  position: absolute;
-  top: 50%;
-  bottom: auto;
-  left: 50%;
-  right: auto;
-  transform: translate( -50%, -50% ) scale( 100% );
-}
-```
+Alternatively to loading the CSS styles as a separate file, you can add the content of file `fullscreen.css` directly to your local cases file (typically in folders `dist` or `dist/theme`).
 
 ## Usage
 
