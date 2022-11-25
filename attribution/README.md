@@ -33,6 +33,10 @@ Add an attribution to your slide.
 <span class="attribution">Photo courtesy of <a href="https://www.britishmuseum.org">British Museum</a></span>
 ```
 
+## Known issues
+
+- [Issue #2](): On Chromium, the attribution text is not properly placed at the right border of the display. Works fine on Chrome and Firefox.
+
 ## License
 
 Copyright (C) 2021, Roland Schmehl
