@@ -39,4 +39,4 @@ Add an attribution to your slide.
 
 ## License
 
-Copyright (C) 2021, Roland Schmehl
+Copyright (C) 2026, Roland Schmehl
